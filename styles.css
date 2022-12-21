@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #2b2b2b;
+}
+
+header{
+    margin: 0;
+    box-shadow: 0 0 10px black;
+    background-color: #26495c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}header p{
+    color: #fff;
+    padding-left: 20px;
+}@media (max-width: 640px) {
+    header p{display: none;}
+    img.image{display:none;}
+}header div.logo{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: solid 2px;
+}header a :hover{
+    transform: scale(110%);
+    transition: 0.5s;
+}header #top{
+    padding-top: 13px;
+}header h1{
+    font-size: larger;
+    
+}header a{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+}header .logo{
+    box-shadow: 0 0 5px black;
+}header input[type=text]{
+    width: 20%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-right: 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px black;
+}input:focus,
+select:focus,
+textarea:focus,
+button:focus{
+    outline: none;
+}
+
+.lobby .element{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    padding: 10px;
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}.lobby .element .title{
+    border-bottom: #26495c solid;
+}.lobby .element .description{
+    padding-top: 10px;
+}.image{
+    margin: 10px;
+    width: 210px;
+    border-radius: 10px;
+}.lobby .element .download{
+    color: white;
+    text-decoration: none;
+}.lobby .element .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #26495c;
+    margin-top: 10px;
+}.lobby .element .download :hover{
+    background-color: #4e778d;
+}.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}#pageCount{
+    margin: 10px;
+}.change-page{
+    background-color: #26495c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}.change-page :hover{
+    cursor: pointer;
+}

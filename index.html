@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content:center; align-items:center;">
+            <a href=""><div class="logo">
+                <h1 id="top">PRIVATE</h1>
+                <span class="material-symbols-outlined">shopping_cart_checkout</span>
+                <h1>WARE</h1>
+            </div></a>
+            <p class="sentence">Find all your software, for free, and certified 100% safe.</p>
+        </div>
+        <input id="search" type="text" placeholder="Search...">
+    </header>
+
+    <div class="inutile" style="padding-bottom: 150px;">
+    </div>
+
+    <section class="lobby" id="lobby">
+    </section>
+
+    <footer>
+        <button class="change-page" id="left" onclick="lastPage()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>
+        <p id="pageCount" style="color:white">0</p>
+        <button class="change-page" id="right" onclick="nextPage()"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
