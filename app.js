@@ -31,6 +31,16 @@ function createElements(_data){
     };
     pageCount = document.getElementById("pageCount");
     pageCount.innerHTML = String(page) + " / " + String(range);
+    let reco = document.getElementsByClassName("reco");
+    if (page == 0){
+        for (let i of reco){
+            i.style.display = "block";
+        }
+    }else{
+        for (let i of reco){
+            i.style.display = "none";
+        }
+    }
 };
 
 function nextPage(){
