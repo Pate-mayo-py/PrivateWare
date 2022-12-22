@@ -29,7 +29,7 @@ header{
 }@media (max-width: 640px) {
     header p{display: none;}
     img.image{display:none;}
-    .recommendations, .reco{display:none;}
+    .reco .title{font-size: medium;}
 }header div.logo{
     margin: 10px;
     width: 100px;
