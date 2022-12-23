@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Privateware | Suggestion</title>
+</head>
+<body>
+    <header>
+        <div class="header-left" style="display: flex; justify-content:center; align-items:center;">
+            <a href="/index.html"><div class="logo">
+                <h1 id="top">PRIVATE</h1>
+                <span class="material-symbols-outlined">shopping_cart_checkout</span>
+                <h1>WARE</h1>
+            </div></a>
+            <p class="sentence">Find all your games, for free, and certified 100% safe.</p>
+        </div>
+        <div class="header-right">
+            <input id="search" type="text" placeholder="Search..." style="margin-right: 65px;">
+            <a href="/suggestion.html" class="suggestion"><span class="material-symbols-outlined" style="font-size:25px; color: #ffc24c; padding-right: 10px; position:fixed; right:10px; top:50px">tips_and_updates</span></a>
+        </div>
+    </header>
+
+    <div class="inutile" style="padding-top: 150px;"></div>
+
+    <section class="lobby">
+        <div class="element">
+            <h2 class="title">Suggestion*</h2>
+            <div id="content">
+                <div id="suggestion-div">
+                    <input type="text" id="suggestion-input" name="suggestion" placeholder="Tape your suggestion here..." style="width:100%">
+                    <button class="suggestion-button" id="suggestion-button" type="button" onclick="sendSuggestion()"><strong>Send</strong></button>
+                    <p id="thanks"></p>
+                </div> 
+                <a href="index.html" id="root" class="download" style="display: none;">
+                    <div class="button">
+                        <h3>Return to the main page</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer style="position:fixed; bottom: 0; color:#fff">
+        <p id="advertissement">*Don't send personnal information, injuries, and useless messages.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

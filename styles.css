@@ -19,6 +19,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }div.head{
     display: flex;
     justify-content: space-between;
@@ -26,7 +27,7 @@ header{
 }header p{
     color: #fff;
     padding-left: 20px;
-}@media (max-width: 640px) {
+}@media (max-width: 810px) {
     header p{display: none;}
     img.image{display:none;}
     .reco .title{font-size: medium;}
@@ -50,8 +51,7 @@ header{
     text-shadow: 0 0 5px black;
 }header .logo{
     box-shadow: 0 0 5px black;
-}header input[type=text]{
-    width: 20%;
+}input[type=text]{
     padding-top: 6px;
     padding-bottom: 6px;
     margin-right: 20px;
@@ -66,18 +66,36 @@ textarea:focus,
 button:focus{
     outline: none;
 }
-.recommendations{
+
+#suggestion-div{
+    margin: 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}button.suggestion-button{
+    width: 20%;
+    font-size: 17px; 
+    border: none; 
+    background-color: #26495c; 
+    color: white; 
+    border-radius: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}button.suggestion-button:hover{
+    cursor: pointer;
+    background-color: #4e778d;
+}.recommendations{
     display:flex;
     justify-content: space-around;
     align-items: center;
     width: 90%;
     margin-left: auto; margin-right: auto;
-}div.reco .content{
+}.content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-
-}.lobby .element, .reco{
+}.reco-content{justify-content: center;}
+.lobby .element, .reco{
     margin-left: auto;
     margin-right: auto;
     margin-top: 4%;
@@ -112,10 +130,6 @@ button:focus{
     margin-top: 10px;
 }.download :hover{
     background-color: #4e778d;
-}.lobby .content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 footer{
