@@ -27,7 +27,7 @@ header{
 }header p{
     color: #fff;
     padding-left: 20px;
-}@media (max-width: 810px) {
+}@media (max-width: 950px) {
     header p{display: none;}
     img.image{display:none;}
     .reco .title{font-size: medium;}
@@ -115,7 +115,7 @@ button:focus{
     padding-top: 10px;
 }.image{
     margin: 10px;
-    width: 210px;
+    height: 150px;
     border-radius: 10px;
 }.download{
     color: white;
